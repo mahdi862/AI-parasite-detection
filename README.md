@@ -1,3 +1,6 @@
 # AI-parasite-detection
-#to run model inference using the Flask app
-# python FlaskApp.py
+# packages requirements to run model inference
+# python 3.8
+# required packages: reuiqrements.txt
+# to run model inference using the Flask app
+# python ./parasite_inference/FlaskApp.py
