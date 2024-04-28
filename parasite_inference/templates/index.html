@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parasite Detection</title>
+<link rel="stylesheet" href="static/css/style.css">
+<!--  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>-->
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+
+<!--    <script type="text/javascript" src="js/jquery-3.6.1.js"> </script>-->
+<!--    <script type="text/javascript" src="js/cropper.min.js"> </script>-->
+
+<script src="static/js/jquery.js"></script><!-- jQuery is required -->
+<link  href="static/js/cropper.css" rel="stylesheet">
+<script src="static/js/cropper.js"></script>
+<h1>HealthAI: Automatic Parasite Detection Platform</h1>
+
+<!--<script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>-->
+
+</head>
+<body>
+<!--<p>Requirements for the parasite detection:</p>-->
+
+<p><b>Requirements for the parasite detection:</b></p>
+<ul type="circle">
+<li>Single full parasite per image</li>
+<li>Preferably no to very small artifact</li>
+<li>Parasite should belong to the following list</li>
+
+<!--<ul>Supported parasites:-->
+<ol style="list-style-type: number; padding-bottom: 0;">
+<li>Ascaris</li>
+<li>Dicrocoelium</li>
+<li>Hymenolepis_nana</li>
+<li>Trichuris_trichiura</li>
+<li>Schistosoma_Haematobium</li>
+<li>Dipylidium_Caninum</li>
+<li>Hookworm</li>
+<li>Enterobius_Vermicularis</li>
+<li>Schistosoma_Mansoni</li>
+<li>Taenia</li>
+<li>Fasciola</li></ol>
+<!--</ul>-->
+</ul>
+
+<p>
+<!-- Below are a series of inputs which allow file selection and interaction with the cropper api -->
+    <input type="file" id="fileInput" accept="image/*" />
+    <input type="button" id="btnCrop" value="Crop" />
+    <input type="button" id="btnRestore" value="Restore" />
+
+<!--    <a href="#" id="aClick" >Click Me</a>-->
+
+</p>
+<div>
+  <canvas id="canvas">
+    Your browser does not support the HTML5 canvas element.
+  </canvas>
+
+</div>
+
+<br />
+<br />
+
+ <form>
+     <div id="result" width="100" height="100" >
+<!--    <canvas id="result" width="200" height="200" style="border:1px solid #000000;"></canvas>-->
+    </div>
+
+    <input style="color: blue;font-size:14pt;width: 150px;height: 40px;" type="button" id="validateParasite" value="Parasite Detect" />
+    <label>  ----------------------->  </label>
+
+    <label style="width: 300px;" id="Parasite">?</label>
+
+    </form>
+
+
+
+<br />
+<br />
+<p>
+<!--    <form>-->
+
+<!--        <input type="button" id="validateParasite" value="Parasite Detect" />-->
+<!--        <label>  -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;  </label>-->
+
+<!--        <label id="Parasite">?</label>-->
+
+<!--    </form>-->
+
+<!--    <a href="#" id="aClick" >Click Me</a>-->
+
+</p>
+<hr />
+<script type="text/javascript" src="static/js/script.js"> </script>
+
+</body>
+</html>
+
